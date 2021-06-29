@@ -20,7 +20,7 @@ This repo is an PyTorch implementation of "Multi-frame Collaboration for Effecti
 - [2021/08/17] Demo for visualization will be added.
 - [2021/08/14] Results on ImageNetVID will be added.
 - [2021/07/28] Implementation for more video-based SOTA methods (e.g., FGFA, RDN, MEGA) released. -->
-- [2021/07/10] Release training/testing scripts and pretrained models for STFT.
+<!-- - [2021/07/10] Release training/testing scripts and pretrained models for STFT. -->
 - Training/Testing scripts and pretrained models for STFT will be released.
 - [2021/06/29] Create repository.
 
