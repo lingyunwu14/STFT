@@ -41,7 +41,7 @@ Supported video-based methods:
 - [x] [FGFA](http://openaccess.thecvf.com/content_iccv_2017/html/Zhu_Flow-Guided_Feature_Aggregation_ICCV_2017_paper.html) (ICCV2017)
 - [x] [RDN](https://openaccess.thecvf.com/content_ICCV_2019/papers/Deng_Relation_Distillation_Networks_for_Video_Object_Detection_ICCV_2019_paper.pdf) (ICCV2019)
 - [x] [MEGA](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_Memory_Enhanced_Global-Local_Aggregation_for_Video_Object_Detection_CVPR_2020_paper.pdf) (CVPR2020)
-- [x] our **[STFT](https://arxiv.org/abs/2107.03609)**
+- [x] **[STFT](https://arxiv.org/abs/2107.03609)** (MICCAI2021)
 
 
 
