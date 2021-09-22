@@ -13,17 +13,6 @@ This repo is an PyTorch implementation of ["Multi-frame Collaboration for Effect
 This repository contains the implementation of our approach STFT and several other video object detection algorithms like [FGFA](http://openaccess.thecvf.com/content_iccv_2017/html/Zhu_Flow-Guided_Feature_Aggregation_ICCV_2017_paper.html), [RDN](https://openaccess.thecvf.com/content_ICCV_2019/papers/Deng_Relation_Distillation_Networks_for_Video_Object_Detection_ICCV_2019_paper.pdf), and [MEGA](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chen_Memory_Enhanced_Global-Local_Aggregation_for_Video_Object_Detection_CVPR_2020_paper.pdf) based on [mega.pytorch](https://github.com/Scalsol/mega.pytorch), as well as training and testing scripts to reproduce the results on Endoscopic Video Datasets reported in our paper. 
 
 
-## Citing STFT
-Any new methods are welcomed. We also hope this repository would help further research in the field of video object detection and beyond. Please cite our paper in your publications if it helps your research:
-```
- @article{wu2021multi,
-  title={Multi-frame Collaboration for Effective Endoscopic Video Polyp Detection via Spatial-Temporal Feature Transformation},
-  author={Wu, Lingyun and Hu, Zhiqiang and Ji, Yuanfeng and Luo, Ping and Zhang, Shaoting},
-  journal={arXiv preprint arXiv:2107.03609},
-  year={2021}
-}
-```
-
 
 ## News
 
@@ -64,6 +53,18 @@ Please follow [INSTALL.md](INSTALL.md) for installation instructions.
 ## Usage
 
 Please follow [GetStarted.md](GetStarted.md) for usage instructions.
+
+
+## Citing STFT
+Any new methods are welcomed. We also hope this repository would help further research in the field of video object detection and beyond. Please cite our paper in your publications if it helps your research:
+```
+ @article{wu2021multi,
+  title={Multi-frame Collaboration for Effective Endoscopic Video Polyp Detection via Spatial-Temporal Feature Transformation},
+  author={Wu, Lingyun and Hu, Zhiqiang and Ji, Yuanfeng and Luo, Ping and Zhang, Shaoting},
+  journal={arXiv preprint arXiv:2107.03609},
+  year={2021}
+}
+```
 
 
 ## Contributing to the project
