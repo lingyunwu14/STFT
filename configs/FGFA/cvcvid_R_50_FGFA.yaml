@@ -1,0 +1,35 @@
+MODEL:
+  VID:
+    ENABLE: True
+    METHOD: "cvc_fgfa"
+    ROI_BOX_HEAD:
+      REDUCE_CHANNEL: True
+    FLOWNET_WEIGHT: "pretrained_models/flownet.ckpt"
+  META_ARCHITECTURE: "GeneralizedRCNNFGFA"
+  WEIGHT: "catalog://ImageNetPretrained/MSRA/R-50"
+  BACKBONE:
+    CONV_BODY: "R-50-C4"
+  ROI_BOX_HEAD:
+    NUM_CLASSES: 2
+    POOLER_RESOLUTION: 7
+    FEATURE_EXTRACTOR: "ResNetConv52MLPFeatureExtractor"
+    PREDICTOR: "FPNPredictor"
+DATASETS:
+  TRAIN: ("CVCVideo_train_videos",)
+  TEST: ("CVCVideo_val_videos",) #2484 frames, subdir in ['2','5','10','18']
+SOLVER:
+  BASE_LR: 0.001
+  WEIGHT_DECAY: 0.0001
+  IMS_PER_BATCH: 4
+  WARMUP_METHOD: "linear"
+  WARMUP_ITERS: 2000
+  CHECKPOINT_PERIOD: 500
+  TEST_PERIOD: 500
+  MAX_ITER: 24000
+  LR_TYPE: "step"
+  GAMMA: 0.5
+  STEPS: (16000, 20000, 22000)
+TEST:
+  IMS_PER_BATCH: 4
+DATALOADER:
+  NUM_WORKERS: 4

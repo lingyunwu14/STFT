@@ -1,0 +1,40 @@
+MODEL:
+  VID:
+    ENABLE: True
+    METHOD: "cvc_mega"
+    ROI_BOX_HEAD:
+      REDUCE_CHANNEL: True
+      ATTENTION:
+        ENABLE: True
+        STAGE: 3
+    MEGA:
+      GLOBAL:
+        RES_STAGE: 0
+  META_ARCHITECTURE: "GeneralizedRCNNMEGA"
+  WEIGHT: "catalog://ImageNetPretrained/MSRA/R-50"
+  BACKBONE:
+    CONV_BODY: "R-50-C4"
+  ROI_BOX_HEAD:
+    NUM_CLASSES: 2
+    POOLER_RESOLUTION: 7
+    FEATURE_EXTRACTOR: "MEGAFeatureExtractor"
+    PREDICTOR: "FPNPredictor"
+DATASETS:
+  TRAIN: ("ASUVideo_train_videos",)
+  TEST: ("ASUVideo_val_videos",) ##2098 frames, subdir in ['4','24','68','70']
+SOLVER:
+  BASE_LR: 0.0005
+  WEIGHT_DECAY: 0.0001
+  IMS_PER_BATCH: 4
+  WARMUP_METHOD: "linear"
+  WARMUP_ITERS: 500
+  CHECKPOINT_PERIOD: 125
+  TEST_PERIOD: 125
+  MAX_ITER: 6000
+  LR_TYPE: "step"
+  GAMMA: 0.5
+  STEPS: (4000, 5000, 5500)
+TEST:
+  IMS_PER_BATCH: 4
+DATALOADER:
+  NUM_WORKERS: 4
