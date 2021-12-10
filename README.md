@@ -17,7 +17,7 @@ This repository contains the implementation of our approach STFT and several oth
 ## News
 
 
-<!-- - [2021/xx/xx] Implementation on ImageNet VID dataset will be added. -->
+- [2021/11/12] For the implementation on the ImageNet VID dataset, please refer to [here](https://github.com/lingyunwu14/STFT/issues/1#issuecomment-966942437).
 - [2021/09/21] Implementation for other video-based methods on Endoscopic Video Datasets released.
 - [2021/09/21] Release training/testing scripts and the pretrained model for STFT.
 - [2021/06/29] Create repository.
