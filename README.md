@@ -58,11 +58,13 @@ Please follow [GetStarted.md](GetStarted.md) for usage instructions.
 ## Citing STFT
 Any new methods are welcomed. We also hope this repository would help further research in the field of video object detection and beyond. Please cite our paper in your publications if it helps your research:
 ```
- @article{wu2021multi,
-  title={Multi-frame Collaboration for Effective Endoscopic Video Polyp Detection via Spatial-Temporal Feature Transformation},
+@inproceedings{wu2021multi,
+  title={Multi-frame collaboration for effective endoscopic video polyp detection via spatial-temporal feature transformation},
   author={Wu, Lingyun and Hu, Zhiqiang and Ji, Yuanfeng and Luo, Ping and Zhang, Shaoting},
-  journal={arXiv preprint arXiv:2107.03609},
-  year={2021}
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={302--312},
+  year={2021},
+  organization={Springer}
 }
 ```
 
